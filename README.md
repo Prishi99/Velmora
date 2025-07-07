@@ -1,73 +1,45 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🌿 Velmora – Your AI-Powered Health Assistant 
 
-**URL**: https://lovable.dev/projects/0712025b-6003-4b19-85f0-aec94443d2b8
+Velmora is a multilingual AI health assistant chatbot designed to answer common health-related questions in a **context-aware, emotionally sensitive** manner. It can help users understand their symptoms, nutritional needs, and medications, while gently reminding them to consult professionals for critical decisions. 
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🩺 Features
 
-**Use Lovable**
+-  10+ Context-Aware Health Q&A Examples (GPT-3.5 Simulated)
+-  Multilingual Support – English, Hindi & Tamil
+-  Emotionally empathetic responses
+-  Upload & Extract Patient Data via OCR
+-  Simple Intent Classification Logic
+-  Organized Markdown Knowledge Base
+-  Optional: Python Notebook for Intent Classification
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0712025b-6003-4b19-85f0-aec94443d2b8) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+##  Sample Questions It Can Answer
 
-**Use your preferred IDE**
+- What to eat when hemoglobin is low?
+- Is paracetamol safe during pregnancy?
+- Can I take ibuprofen with a cold?
+- क्या बुखार में सिर दर्द होना सामान्य है?  
+- கர்ப்ப காலத்தில் எந்த மருந்துகள் பாதுகாப்பாகும்?
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+> **Note:** All answers are AI-generated for informational use only. Please consult a healthcare professional for medical decisions.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+##  Intent Classification Logic
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Velmora classifies health-related questions into simple **intent categories** based on keywords:
+- `nutrition`: diet, food, iron, vitamin, intake
+- `medicine`: paracetamol, tablet, dose, side effect
+- `emergency`: chest pain, unconscious, seizure, bleeding
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0712025b-6003-4b19-85f0-aec94443d2b8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Example:
+```python
+keywords = {
+    'nutrition': ['eat', 'diet', 'iron', 'haemoglobin', 'vitamin', 'protein'],
+    'medicine': ['paracetamol', 'medicine', 'tablet', 'safe', 'dose'],
+    'emergency': ['emergency', 'pain', 'seizure', 'bleeding', 'urgent']
+}

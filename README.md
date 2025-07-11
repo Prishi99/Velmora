@@ -1,6 +1,6 @@
 
 # 🌿 Velmora – Your AI-Powered Health Assistant  
-### Link - https://velmora-qtlx.vercel.app/
+### Link - https://velmora1.vercel.app/
 
 Velmora is a multilingual AI health assistant chatbot designed to answer common health-related questions in a **context-aware, emotionally sensitive** manner. It can help users understand their symptoms, nutritional needs, and medications, while gently reminding them to consult professionals for critical decisions. 
 
